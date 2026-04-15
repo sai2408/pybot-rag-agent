@@ -1,0 +1,47 @@
+Python OOP Object Oriented Programming
+
+A class is a blueprint for creating objects.
+Define a class: class Dog: pass
+Create an instance: my_dog = Dog()
+Classes bundle data and behavior together.
+
+The __init__ method runs automatically when object is created.
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+my_dog = Dog('Bruno', 3)
+print(my_dog.name)
+
+A method is a function inside a class.
+class Dog:
+    def __init__(self, name):
+        self.name = name
+    def bark(self):
+        return f'{self.name} says Woof!'
+my_dog = Dog('Bruno')
+print(my_dog.bark())
+
+Inheritance lets one class reuse another class.
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    def speak(self):
+        return '...'
+class Dog(Animal):
+    def speak(self):
+        return f'{self.name} says Woof!'
+class Cat(Animal):
+    def speak(self):
+        return f'{self.name} says Meow!'
+
+The self keyword refers to the current object instance.
+self is always the first parameter in a method.
+Python passes self automatically when you call a method.
+
+Encapsulation hides internal details of a class.
+Use single underscore for protected: self._balance
+Use double underscore for private: self.__password
+
+Polymorphism means different classes can use the same method name.
+Each class implements the method differently.

@@ -1,0 +1,15 @@
+Python Strings
+A string is a sequence of characters wrapped in quotes.
+Create a string: name = 'Sai Vardhan'
+String length: len(name) returns 11
+Uppercase: name.upper() returns 'SAI VARDHAN'
+Lowercase: name.lower() returns 'sai vardhan'
+Replace: name.replace('Sai', 'Ravi') returns 'Ravi Vardhan'
+Split: 'hello world'.split() returns ['hello', 'world']
+Strip whitespace: '  hello  '.strip() returns 'hello'
+Check if contains: 'Sai' in name returns True
+f-string formatting: f'Hello {name}' returns 'Hello Sai Vardhan'
+String slicing: name[0:3] returns 'Sai'
+Join a list: ' '.join(['hello', 'world']) returns 'hello world'
+Count occurrences: name.count('a') returns 2
+Find position: name.find('Vardhan') returns 4

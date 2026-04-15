@@ -1,0 +1,48 @@
+Python Errors and Exception Handling
+
+Common Python Errors
+SyntaxError means wrong code structure such as missing colon.
+NameError means using a variable that does not exist.
+TypeError means wrong data type such as adding int and string.
+ValueError means right type but wrong value such as int('hello').
+IndexError means accessing a list index that does not exist.
+KeyError means accessing a dictionary key that does not exist.
+ZeroDivisionError means dividing a number by zero.
+FileNotFoundError means opening a file that does not exist.
+AttributeError means calling a method that does not exist on an object.
+
+How to use try and except to handle errors
+try:
+    num = int(input('Enter a number: '))
+    print(10 / num)
+except ValueError:
+    print('That is not a number!')
+except ZeroDivisionError:
+    print('Cannot divide by zero!')
+
+The finally block always runs whether an error occurred or not.
+try:
+    f = open('file.txt')
+    data = f.read()
+except FileNotFoundError:
+    print('File not found!')
+finally:
+    print('This always runs no matter what')
+
+How to raise your own custom errors using raise keyword.
+def check_age(age):
+    if age < 0:
+        raise ValueError('Age cannot be negative!')
+    return age
+
+Catch multiple exceptions in one line using parentheses.
+except (TypeError, ValueError):
+    print('Type or Value error occurred!')
+
+The else block runs only when no error occurred.
+try:
+    result = 10 / 2
+except ZeroDivisionError:
+    print('Error!')
+else:
+    print('No error, result is', result)

@@ -1,0 +1,34 @@
+Python Lists
+A list is an ordered collection of items.
+Create a list: fruits = ['apple', 'banana', 'mango']
+Access by index: fruits[0] returns 'apple'
+Add items: fruits.append('grape')
+Remove items: fruits.remove('banana')
+Get length: len(fruits) returns 3
+Lists are mutable, items can be changed after creation.
+Loop through a list: for fruit in fruits: print(fruit)
+List comprehension: evens = [x for x in range(10) if x%2==0]
+Sort a list: fruits.sort()
+Reverse a list: fruits.reverse()
+Check if item exists: if 'apple' in fruits: print('yes')
+
+Python Dictionaries
+A dictionary stores key-value pairs.
+Create one: person = {'name': 'Ravi', 'age': 25}
+Access values: person['name'] returns 'Ravi'
+Add new key: person['city'] = 'Hyderabad'
+Safe access: person.get('phone', 'not found')
+Loop over: for key, value in person.items(): print(key, value)
+Keys must be unique. Values can be anything.
+Delete a key: del person['age']
+Check if key exists: if 'name' in person: print('yes')
+
+Python Functions
+A function is a reusable block of code.
+Define with def: def greet(name): return f'Hello {name}'
+Call it: greet('Sai') returns 'Hello Sai'
+Default arguments: def greet(name='friend'): return f'Hello {name}'
+Return multiple values: return x, y
+Lambda function: square = lambda x: x**2
+*args for variable arguments: def add(*args): return sum(args)
+**kwargs for keyword arguments: def show(**kwargs): print(kwargs)
